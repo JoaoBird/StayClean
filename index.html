@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stay Clean</title>
+  <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">LOGO</div>
+    <nav class="menu-desktop">
+  <a href="#">Assinaturas</a>
+    <a href="#">Agendamento</a>
+    <a href="#">Checkout</a>
+    <a href="#">Contato</a>
+    <a href="#">Sobre nós</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <nav class="menu-mobile" id="menu-mobile">
+   <a href="#">Assinaturas</a>
+    <a href="#">Agendamento</a>
+    <a href="#">Checkout</a>
+    <a href="#">Contato</a>
+    <a href="#">Sobre nós</a>
+    <button id="close-menu">✕</button>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <div class="content">
+      <h1>Placeholder de título</h1>
+      <p>Espaço para texto descritivo. Esse texto é apenas um placeholder para conteúdo futuro.</p>
+      <button class="btn">Botão Placeholder</button>
+    </div>
+    <div class="image-space">
+      <p>[ Espaço reservado para imagem ]</p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu-mobile");
+    const closeBtn = document.getElementById("close-menu");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("open");
+    });
+  </script>
+</body>
+</html>
