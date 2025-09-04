@@ -1,3 +1,4 @@
+import { AgendamentoCalendly } from "@/components/agendamento/AgendamentoCalendly";
 import Image from "next/image";
 
 export default function Home() {
