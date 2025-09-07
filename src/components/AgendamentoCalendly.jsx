@@ -47,7 +47,7 @@ const AgendamentoCalendly = ({ tipoServico, dataCliente }) => {
   );
 };
 
-export function AgendamentoCalendly({ url }) {
+export function AgendamentoCalendlySimples({ url }) {
   return (
     <div
       className="calendly-container"

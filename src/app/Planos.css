@@ -1,0 +1,98 @@
+.planos {
+  padding: 2rem;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-planos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(180deg,
+    #42a5f5,
+    #1e88e5,
+    #1565c0,
+    #0d47a1,
+    #06224d
+  ); /* gradiente 5 tons */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+}
+
+.card-img {
+  position: relative;
+}
+
+.card-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Texto no overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  background: rgba(10, 25, 47, 0.55); /* azul fosco translúcido */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Corpo do card */
+.card-body {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.25); /* fosco por cima do gradiente */
+  backdrop-filter: blur(4px);
+}
+
+.card-body h4 {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.card-body span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #42a5f5; /* azul destaque suave */
+}
+
+/* Botão */
+.btn-assine {
+  display: inline-block;
+  background: linear-gradient(90deg, #1e88e5, #00c6ff);
+  border: none;
+  padding: 0.9rem 1.8rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.btn-assine:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #1565c0, #0099cc);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}

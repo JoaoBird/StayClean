@@ -1,16 +1,19 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
-import CarouselPlanos from "../components/CarouselPlanos";
-import Navbar from "../components/Navbar";
-import "./globals.css";
-import "./Planos.css";
+import "../globals.css";
+import "../Planos.css";
+import Navbar from "@/components/Navbar";
+import "@/styles/pageFaq.css";
+import Faq from "@/components/Faq";
 
-export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
+
+
+export default function PageFaq() {
   return (
     <>
-      <Navbar />
+     <Navbar />
 
       {/* Banner principal */}
       <section className="banner">
@@ -45,18 +48,22 @@ export default function Home() {
 
         {/* Conteúdo sobreposto */}
         <div className="banner-content">
-          <h2>Lava Rápido por Assinatura</h2>
+          <h2>Dúvidas frequentes</h2>
           <h1>Mantenha seu carro sempre impecável!</h1>
           <p>
             Faça sua assinatura e garanta que seu carro receba o melhor
             tratamento estético automotivo.
           </p>
-          <button className="btn">Assine Já</button>
         </div>
+        
       </section>
+      <Faq />
 
-      {/* Carrossel de Planos */}
-      <CarouselPlanos />
     </>
+    
+    
   );
 }
+
+    
+    
